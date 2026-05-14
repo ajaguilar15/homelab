@@ -1,5 +1,4 @@
 # Homelab Infrastructure
-<img src="mypc.jpg" width="700" height="400">
 
 ## Overview
 
@@ -7,7 +6,7 @@ This repository documents my self-hosted homelab and infrastructure engineering 
 
 The homelab currently consists of a Windows host machine(My PC) running VMware Workstation Pro with an Ubuntu Server virtual machine configured for Linux administration and infrastructure experimentation.
 <p align="center">
-	<img src="mypc.jpg" width="700" height="400">
+	<img src="myPC.jpg" width="700" height="400">
 </p>
 
 
