@@ -1,11 +1,15 @@
 # Homelab Infrastructure
-![VMware Setup](myPC.jpg)
+<img src="mypc.jpg" width="700" height="400">
 
 ## Overview
 
 This repository documents my self-hosted homelab and infrastructure engineering journey. The purpose of this project is to learn how modern computing infrastructure is built, deployed, managed, and remotely administered.
 
-The homelab currently consists of a Windows host machine running VMware Workstation Pro with an Ubuntu Server virtual machine configured for Linux administration and infrastructure experimentation.
+The homelab currently consists of a Windows host machine(My PC) running VMware Workstation Pro with an Ubuntu Server virtual machine configured for Linux administration and infrastructure experimentation.
+<p align="center">
+	<img src="mypc.jpg" width="700" height="400">
+</p>
+
 
 This repository will continue expanding as I learn more about:
 
