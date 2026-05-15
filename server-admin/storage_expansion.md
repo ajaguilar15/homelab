@@ -3,13 +3,22 @@
 The VMware is using a virtual disk file that acts as "hard
 drive". This can be configured to use more storage.
 
+## 📚 Concepts Learned
+
+- Virtual disk expansion
+- VMware disk utilities
+- Snapshots and cloning
+- Linux partitions
+- LVM architecture
+- Physical volumes
+- Logical volumes
+- Filesystem resizing
+
 ---
 
 ## 🔧 Step 1 - Expand the VMware Virtual Disk
 
 Add more storage to the VMware disk throught the VMware settings.
-
-### Expand VMware Disk
 
 ```text
 VM → Settings → Hard Disk → Utilities → Expand
@@ -55,12 +64,21 @@ sudo growpart /dev/sda 3
 ```
 
 ### Resize LVM Physical Volume
-Purpose:
 
 Updates LVM to recognize newly available storage
 
 ```bash
 sudo pvresize /dev/sda3
+```
+
+### 🧱 New Disk Layout
+
+```bash
+sda                         8:0    0   600G  0 disk
+├─sda1                      8:1    0     1M  0 part
+├─sda2                      8:2    0   1.8G  0 part /boot
+└─sda3                      8:3    0 598.2G  0 part
+  └─ubuntu--vg-ubuntu--lv 252:0    0 598.2G  0 lvm  /
 ```
 
 ---
@@ -90,17 +108,3 @@ The VM was:
 1. Cloned
 2. Snapshots removed
 3. Expanded successfully
-
----
-
-
-## 📚 Concepts Learned
-
-- Virtual disk expansion
-- VMware disk utilities
-- Snapshots and cloning
-- Linux partitions
-- LVM architecture
-- Physical volumes
-- Logical volumes
-- Filesystem resizing
