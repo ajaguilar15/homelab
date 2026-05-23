@@ -28,13 +28,15 @@ This repository will continue expanding as I learn more about:
 # Current Infrastructure
 
 ```text
-Physical Hardware
+Physical PC
 │
 └── Windows Host Operating System
       │
       └── VMware Workstation Pro
             │
-            └── Ubuntu Server Virtual Machine
+            └── Ubuntu Server
+                  │
+                  └── Docker
 ```
 
 ---
@@ -69,7 +71,6 @@ The long-term goal of this homelab is to build a self-hosted infrastructure plat
 - Backend systems
 - Infrastructure automation
 - Monitoring dashboards
-- Git hosting
 - Database systems
 - Multi-VM networking
 - Cloud-style environments
@@ -107,7 +108,6 @@ This project focuses heavily on understanding:
 
 Planned additions include:
 
-- Docker
 - Kubernetes
 - NGINX
 - Reverse proxies
